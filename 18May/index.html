@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key</title> 
+</head>
+<body>
+    <select id="options" onchange="choosePrimitive()">
+    <option value="triangles">TRIANGLE FAN</option>
+    <option value="lines">LINES</option>
+    <option value="points">POINTS</option>
+    </select>
+    <canvas width="600" height="600" style="border: 1px solid #000000">
+   </canvas>
+   <img src="image.jpg" id="myImage" style="display: none"/>
+    <p>Press  ↑↓ to rotate along x-axis</p>
+    <p id="xaxis"> 0</p>
+    <p>Press ←→ to rotate along y-axis</p>
+    <p id="yaxis"> 0</p>
+    <script src="viviane_cube.js" defer></script>
+</body>
+</html>

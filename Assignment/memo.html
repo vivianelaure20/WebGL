@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>WEBGL TEST 1</title>
+    <script src="memo.js" defer></script>
+  </head>
+  <body>
+    <canvas width="600" height="600" style="border: 1px solid #000000">
+    </canvas>
+    <div class="slidecontainer">
+      <label id="xsliderLabel">X 0</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider"
+        id="xslider"
+        oninput="xslider()"
+      />
+    </div>
+    <div class="slidecontainer">
+      <label id="ysliderLabel">Y 0</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider"
+        id="yslider"
+        oninput="yslider()"
+      />
+    </div>
+    <div class="slidecontainer">
+      <label id="zsliderLabel">Z 0</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider"
+        id="zslider"
+        oninput="zslider()"
+      />
+    </div>
+    <label>Spin along</label>
+    <button id="x" onclick="stoptartx()">X</button>
+    <button id="y" onclick="stopstarty()">Y</button>
+    <button id="z" onclick="stopstartz()">Z</button>
+    <div class="slidecontainer">
+      <label id="sizeLabel">Size 0.25</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider"
+        id="size"
+        oninput="size()"
+      />
+    </div>
+    <div class="slidecontainer">
+      <label id="alphaLabel" oninput="alpha()">Alpha 1.0</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider"
+        id="alpha"
+      />
+    </div>
+    <div class="slidecontainer">
+      <label id="movexLabel">Move X 1.0</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider"
+        id="movex"
+        oninput="movex()"
+      />
+    </div>
+    <div class="slidecontainer">
+      <label id="moveyLabel">Move Y 1.0</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="0"
+        class="slider"
+        id="movey"
+        oninput="movey()"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head> 
+        <title>CUBE  </title>
+        <script src = "letterM.js" defer> </script>
+      
+    </head>
+    <body> 
+        <canvas id = "mycanvas" width="500" height="500" style="border: 1px solid #000000;">
+        </canvas>
+    </br>
+    <div class="split left">
+        <div class="centered">
+            <div   style="border: 1px solid black;"> 
+        <b>Box 1 controls</b> </br></br>
+        X <span id="xsliderLabel">0</span>
+        <input type="range" min="0" max="360" value="0" class="slider" id="xslider">
+        </br> 
+        Y <span id="ysliderLabel">0</span>
+        <input type="range" min="0" max="360" value="0" class="slider" id="yslider">
+        </br> 
+        Z <span id="zsliderLabel">0</span>
+        <input type="range" min="0" max="360" value="0" class="slider" id="zslider">
+    </br>    Spin along  
+        <button onclick="x_axis();" > X </button> 
+        <button onclick="y_axis();"> Y </button>
+        <button onclick="z_axis();" > Z </button> </br>
+        Size <span id="sizeLabel">0.25</span>
+        <input type="range" min="0.05" max="1" value="0.25" step = "0.05" class="slider" id="size">
+</br>
+        Alpha <span id="alphaLabel">1.0</span>
+        <input type="range" min="0.01" max="1" value="1.0" step = "0.01" class="slider" id="alpha"></br>
+        Move X <span id="movexLabel">0.0</span>
+        <input type="range" min="-1" max="1" value="0.0" step = "0.01" class="slider" id="movex"></br>
+        Move Y <span id="moveyLabel">0.0</span>
+        <input type="range" min="-1" max="1" value="0.0" step = "0.01" class="slider" id="movey">
+    </div>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered">
+    
+    <div   style="border: 1px solid black;"> 
+        <b>Box 2 controls</b> </br></br>
+        X <span id="xsliderLabel">0</span>
+        <input type="range" min="0" max="360" value="0" class="slider" id="xslider">
+        </br> 
+        Y <span id="ysliderLabel">0</span>
+        <input type="range" min="0" max="360" value="0" class="slider" id="yslider">
+        </br> 
+        Z <span id="zsliderLabel">0</span>
+        <input type="range" min="0" max="360" value="0" class="slider" id="zslider">
+    </br>    Spin along  
+        <button onclick="x_axis();" > X </button> 
+        <button onclick="y_axis();"> Y </button>
+        <button onclick="z_axis();" > Z </button> </br>
+        Size <span id="sizeLabel">0.25</span>
+        <input type="range" min="0.05" max="1" value="0.25" step = "0.05" class="slider" id="size">
+</br>
+        Alpha <span id="alphaLabel">1.0</span>
+        <input type="range" min="0.01" max="1" value="1.0" step = "0.01" class="slider" id="alpha"></br>
+        Move X <span id="movexLabel">0.0</span>
+        <input type="range" min="-1" max="1" value="0.0" step = "0.01" class="slider" id="movex"></br>
+        Move Y <span id="moveyLabel">0.0</span>
+        <input type="range" min="-1" max="1" value="0.0" step = "0.01" class="slider" id="movey">
+        </div>
+    </div>
+  </div>
+    
+        
+       
+    </body>
+</html>

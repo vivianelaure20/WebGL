@@ -1,0 +1,210 @@
+<html>
+  <head>
+    <title>WEBGL TEST 1</title>
+    <script src="main2.js" defer></script>
+  </head>
+  <style>
+    div {
+      height: 230px;
+      width: 20%;
+      border-color: black;
+      display:inline-block;
+      
+    }
+    .border{
+      display:inline-block;
+      border: 2px;
+       height: 230px;
+      width: 100%;
+      border-color: black;
+    }
+    </style>
+  <body>
+    <canvas width="500" height="500"style="background-color:#065839;border:2px solid #000000;">
+    </canvas></br> </br>
+        
+    
+    <div style="border:2px solid #000000;">
+    <b>Box 1 controls</b> </br>
+      </br>
+      X <span id="xsliderLabel">0</span>
+
+      <input
+        type="range"
+        min="0"
+        max="360"
+        value="0"
+        class="slider"
+        id="xslider"
+      />
+    </br> 
+    
+    Y <span id="ysliderLabel">0</span>
+      <input
+        type="range"
+        min="0"
+        max="360"
+        value="0"
+        class="slider"
+        id="yslider"
+      />
+    </br> 
+   
+    Z <span id="zsliderLabel">0</span>
+      <input
+        type="range"
+        min="0"
+        max="360"
+        value="0"
+        class="slider"
+        id="zslider"
+      />
+   
+  </br>    Spin along  
+  <button id="x" onclick="x_axis()"> X </button> 
+  <button id="y" onclick="y_axis()"> Y </button>
+  <button id="z" onclick="z_axis()"> Z </button> </br>
+    
+
+ 
+  Size <span id="sizeLabel">0.25</span>
+      <input
+        type="range"
+        min="0.05"
+        max="1"
+        value="0.25"
+        step="0.05"
+        class="slider"
+        id="size"
+      />
+  
+   
+    </br>
+    Alpha <span id="alphaLabel">1.0</span>
+      <input
+        type="range"
+        min="0.01"
+        max="1"
+        value="1.0"
+        step="0.01"
+        class="slider"
+        id="alpha"
+      />
+ 
+    </br>
+      Move X <span id="movexLabel">1.0</span>
+      <input
+        type="range"
+        min="-1"
+        max="1"
+        value="0.0"
+        step="0.01"
+        class="slider"
+        id="movex"
+      />
+      </br>
+      Move Y <span id="moveyLabel">1.0</span>
+      <input
+        type="range"
+        min="-1"
+        max="1"
+        value="0.0"
+        step="0.01"
+        class="slider"
+        id="movey"
+      />
+ 
+    </br>   </br>   </br>
+      <div style="border:2px solid #000000;" class="border">
+      <b>Box 2 controls</b> </br>
+        </br>
+        X <span id="xsliderLabel">0</span>
+  
+        <input
+          type="range"
+          min="0"
+          max="360"
+          value="0"
+          class="slider"
+          id="xslider"
+        />
+      </br> 
+      
+      Y <span id="ysliderLabel">0</span>
+        <input
+          type="range"
+          min="0"
+          max="360"
+          value="0"
+          class="slider"
+          id="yslider"
+        />
+      </br> 
+     
+      Z <span id="zsliderLabel">0</span>
+        <input
+          type="range"
+          min="0"
+          max="360"
+          value="0"
+          class="slider"
+          id="zslider"
+        />
+     
+    </br>    Spin along  
+    <button id="x" onclick="x_axis()"> X </button> 
+    <button id="y" onclick="y_axis()"> Y </button>
+    <button id="z" onclick="z_axis()"> Z </button> </br>
+      
+  
+   
+    Size <span id="sizeLabel">0.25</span>
+        <input
+          type="range"
+          min="0.05"
+          max="1"
+          value="0.25"
+          step="0.05"
+          class="slider"
+          id="size"
+        />
+    
+     
+      </br>
+      Alpha <span id="alphaLabel2">1.0</span>
+        <input
+          type="range"
+          min="0.01"
+          max="1"
+          value="1.0"
+          step="0.01"
+          class="slider"
+          id="alpha2"
+        />
+   
+      </br>
+        Move X <span id="movexLabel">1.0</span>
+        <input
+          type="range"
+          min="-1"
+          max="1"
+          value="0.0"
+          step="0.01"
+          class="slider"
+          id="movex"
+        />
+        </br>
+        Move Y <span id="moveyLabel">1.0</span>
+        <input
+          type="range"
+          min="-1"
+          max="1"
+          value="0.0"
+          step="0.01"
+          class="slider"
+          id="movey"
+        />
+        </div>
+      </div>
+  </body>
+</html>
